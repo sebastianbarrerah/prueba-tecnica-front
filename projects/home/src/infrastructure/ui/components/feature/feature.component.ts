@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-feature',
   imports: [],
   templateUrl: './feature.component.html',
-  styleUrl: './feature.component.css'
+  styleUrl: './feature.component.scss'
 })
 export class FeatureComponent {
 

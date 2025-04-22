@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-aside',
   imports: [],
   templateUrl: './aside.component.html',
-  styleUrl: './aside.component.css'
+  styleUrl: './aside.component.scss'
 })
 export class AsideComponent {
 
