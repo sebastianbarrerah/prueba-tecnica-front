@@ -1,0 +1,26 @@
+<header class="header">
+    <nav class="header__nav container">
+      <a routerLink="/" class="header__brand" aria-label="Inicio Sistema de Votación">
+        <img src="assets/images/logo.svg" alt="Logo" class="header__logo">
+        <span class="header__brand-text">TuVotacion</span>
+      </a>
+      
+      <nav class="header__menu">
+        <a routerLink="/" routerLinkActive="header__link--active" [routerLinkActiveOptions]="{exact: true}" class="header__link">Inicio</a>
+        <a routerLink="/candidates" routerLinkActive="header__link--active" class="header__link">Candidatos</a>
+        <a routerLink="/statistics" routerLinkActive="header__link--active" class="header__link">Estadísticas</a>
+        <a routerLink="/help" routerLinkActive="header__link--active" class="header__link">Ayuda</a>
+      </nav>
+      
+      <aside class="header__init">
+        <ng-container >
+          <a routerLink="/login" class="button">Iniciar Sesión</a>
+          <a routerLink="/register" class="button">Registrarse</a>
+        </ng-container>
+        
+        <ng-template #loggedIn>
+          <button  class="button button--outline">Cerrar Sesión</button>
+        </ng-template>
+      </aside>
+    </nav>
+  </header>

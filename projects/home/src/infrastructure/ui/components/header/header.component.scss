@@ -1,0 +1,97 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.header {
+  background-color: white;
+  box-shadow: $shadow-sm;
+  position: sticky;
+  top: 0;
+  z-index: $z-sticky;
+  border-bottom: 1px solid $gray-200;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    padding: 0 $spacing-4;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary-700;
+    font-weight: 600;
+    font-size: 1.25rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary-600;
+    }
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+    margin-right: $spacing-2;
+  }
+
+  &__menu {
+    display: none;
+    align-items: center;
+    gap: $spacing-5;
+
+    @include respond-to('medium') {
+      display: flex;
+    }
+  }
+
+  &__link {
+    color: $text-light;
+    text-decoration: none;
+    font-weight: 500;
+    padding: $spacing-2 0;
+    position: relative;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary-600;
+    }
+
+    &--active {
+      color: $primary-600;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $primary-500;
+        border-radius: $border-radius-full;
+      }
+    }
+  }
+
+  &__init {
+    display: flex;
+    align-items: center;
+    gap: $spacing-3;
+  }
+}
+
+.button{
+  padding: 10px 20px;
+  border: 2px solid #312e81;
+  border-radius: 5px ;
+  color: #312e81;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover{
+  background-color: #312e81;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
