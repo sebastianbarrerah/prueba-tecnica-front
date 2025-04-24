@@ -11,6 +11,9 @@
       ],
       "home": [
         "./dist/home"
+      ],
+      "shared": [
+        "./dist/shared"
       ]
     },
     "noImplicitOverride": true,
