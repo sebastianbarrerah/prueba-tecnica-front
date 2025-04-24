@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { BannerComponent } from "../components/banner/banner.component";
-import { FooterComponent } from "../components/footer/footer.component";
+import { TemplateCandidateComponent } from "../components/template-candidate/template-candidate.component";
 
 @Component({
   selector: 'lib-layout',
-  imports: [BannerComponent, FooterComponent],
+  imports: [TemplateCandidateComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })

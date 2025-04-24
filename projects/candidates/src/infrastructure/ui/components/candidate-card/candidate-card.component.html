@@ -1,0 +1,28 @@
+<article class="candidate">
+    <header class="candidate__header">
+      <img class="candidate__photo" >
+      <span class="candidate__party">partido politico</span>
+    </header>
+    
+    <main class="candidate__content">
+      <h2 class="candidate__name">Nombre</h2>
+      <p class="candidate__platform">platform</p>
+      
+      <footer class="candidate__footer">
+        <div class="candidate__votes">
+          <span class="candidate__votes-label">Votos Actuales:</span>
+          <span class="candidate__votes-count">datoo</span>
+        </div>
+        
+        <ng-container >
+          <button class="button button--primary button--full">
+            Votar
+          </button>
+        </ng-container>
+        
+        <ng-template #loginPrompt>
+          <p class="candidate__login-prompt">Por favor inicia sesión para votar</p>
+        </ng-template>
+      </footer>
+    </main>
+  </article>

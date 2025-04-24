@@ -1,0 +1,111 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.candidate {
+  background-color: white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-md;
+  }
+
+  &__header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+
+    .candidate:hover & {
+      transform: scale(1.05);
+    }
+  }
+
+  &__party {
+    position: absolute;
+    top: $spacing-3;
+    right: $spacing-3;
+    padding: $spacing-1 $spacing-2;
+    border-radius: $border-radius;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    &--progress {
+      background-color: $progress-500;
+    }
+
+    &--unity {
+      background-color: $unity-500;
+    }
+
+    &--future {
+      background-color: $future-500;
+    }
+  }
+
+  &__content {
+    padding: $spacing-4;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: $spacing-2;
+    color: $text-color;
+  }
+
+  &__platform {
+    color: $text-light;
+    margin-bottom: $spacing-4;
+    flex-grow: 1;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-3;
+    border-top: 1px solid $gray-200;
+    padding-top: $spacing-3;
+  }
+
+  &__votes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-label {
+      font-weight: 500;
+      color: $text-light;
+    }
+
+    &-count {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $primary-600;
+    }
+  }
+
+  &__login-prompt {
+    color: $text-muted;
+    text-align: center;
+    font-size: 0.875rem;
+    margin: $spacing-2 0;
+  }
+}
