@@ -17,6 +17,9 @@
       ],
       "statics": [
         "./dist/statics"
+      ],
+      "user": [
+        "./dist/user"
       ]
     },
     "noImplicitOverride": true,

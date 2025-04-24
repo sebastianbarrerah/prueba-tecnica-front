@@ -12,5 +12,9 @@ export const routes: Routes = [
     {
         path: 'statics',
         loadChildren: () => import('statics').then(m => m.staticRoute)     
-    }
+    },
+    {
+        path: 'users',
+        loadChildren: () => import('user').then(m => m.userRoute)     
+    },
 ];
