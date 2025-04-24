@@ -1,0 +1,52 @@
+<section class="statistics-section">
+    <div class="container">
+      <header class="page-header">
+        <h1 class="page-title">Estadísticas electorales</h1>
+        <p class="page-subtitle">Resultados de votación en tiempo real y visualizaciones de datos.</p>
+      </header>
+      
+      <div class="stats-overview">
+        <div class="stats-card">
+          <h3 class="stats-card-title">Total de votos emitidos</h3>
+          <p class="stats-card-value">Total de votos poner aqui</p>
+        </div>
+        
+        <div class="stats-card">
+          <h3 class="stats-card-title">Candidatos</h3>
+          <p class="stats-card-value">cantidad de candidatos</p>
+        </div>
+        
+        <div class="stats-card">
+          <h3 class="stats-card-title">Última actualización</h3>
+          <p class="stats-card-value">Just Now</p>
+        </div>
+      </div>
+      
+      <div class="vote-results">
+        <h2 class="section-title">Distribución actual de votos</h2>
+        
+        <div class="results-table">
+          <div class="candidate-result" >
+          <!-- <div class="candidate-result" *ngFor="let candidate of candidates"> -->
+            <div class="candidate-info">
+              <h3 class="candidate-name">nombre</h3>
+              <p class="candidate-party">partido politico</p>
+            </div>
+            
+            <div class="vote-chart">
+              <div class="vote-bar">
+                <div 
+                  class="vote-bar-fill" 
+                ></div>
+              </div>
+              <div class="vote-details">
+                <span class="vote-count"> votes</span>
+                <!-- <span class="vote-percentage">{{ getVotePercentage(candidate.votes) | number:'1.1-1' }}%</span> -->
+                 <span>canridad de votos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

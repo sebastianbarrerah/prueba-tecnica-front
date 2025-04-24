@@ -8,5 +8,9 @@ export const routes: Routes = [
     {
         path: 'candidates',
         loadChildren: () => import('candidates').then(m => m.candidateRoute)    
+    },
+    {
+        path: 'statics',
+        loadChildren: () => import('statics').then(m => m.staticRoute)     
     }
 ];
