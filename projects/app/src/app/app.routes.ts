@@ -7,6 +7,6 @@ export const routes: Routes = [
     },
     {
         path: 'candidates',
-        loadChildren: () => import('candidates').then(m => m.candidateRoute)
+        loadChildren: () => import('candidates').then(m => m.candidateRoute)    
     }
 ];

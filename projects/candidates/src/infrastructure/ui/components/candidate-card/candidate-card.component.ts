@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { dataPhotos } from '../../../utils/data';
 
 @Component({
@@ -9,5 +9,6 @@ import { dataPhotos } from '../../../utils/data';
 })
 export class CandidateCardComponent {
   public photos:string[] = dataPhotos;
+  candidate = input<any>(null);
 
 }
