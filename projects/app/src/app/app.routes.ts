@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        loadChildren: () => import('home').then(m => m.homeRoutes)       
+        loadChildren: () => import('home').then(m => m.homeRoutes)         
     },
     {
         path: 'candidates',
@@ -15,6 +15,6 @@ export const routes: Routes = [
     },
     {
         path: 'users',
-        loadChildren: () => import('user').then(m => m.userRoute)     
+        loadChildren: () => import('user').then(m => m.userRoute)               
     },
 ];

@@ -12,14 +12,18 @@
       </nav>
       
       <aside class="header__init">
-        <ng-container >
-          <a routerLink="/users" class="button">Iniciar Sesión</a>
-          <a routerLink="/register" class="button">Registrarse</a>
-        </ng-container>
+        @if(confirmedLogin()){
+          <ng-container>
+            <p class="name">Hola {{name}}</p>
+            <button (click)="logout()" class="button">Cerrar Sesión</button>
+          </ng-container>
+        }@else{
+          <ng-container >
+            <a routerLink="/users" class="button">Iniciar Sesión</a>
+            <a routerLink="/users/register" class="button">Registrarse</a>
+          </ng-container>
+        }
         
-        <ng-template #loggedIn>
-          <button  class="button button--outline">Cerrar Sesión</button>
-        </ng-template>
       </aside>
     </nav>
   </header>

@@ -89,9 +89,17 @@
   color: #312e81;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 .button:hover{
   background-color: #312e81;
   color: white;
   transition: all 0.3s ease-in-out;
+}
+
+.name{
+  color: #312e81;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 15px;
 }
